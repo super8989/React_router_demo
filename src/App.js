@@ -18,13 +18,20 @@ class App extends Component {
 					<NavLink exact activeClassName='active-link' to='/dog'>
 						Dog
 					</NavLink>
+					<NavLink exact activeClassName='active-link' to='/dog/c'>
+						Dog(C)
+					</NavLink>
+					<NavLink exact activeClassName='active-link' to='/dog/r'>
+						Dog(R)
+					</NavLink>
 					<NavLink exact activeClassName='active-link' to='/contact'>
 						Contact
 					</NavLink>
 				</nav>
 				<Switch>
 					<Route exact path='/' component={About} />
-					<Route exact path='/dog' component={Dog} />
+					<Route exact path='/dog/c' component={() => <Dog name='Muffin' />} />
+					<Route exact path='/dog/r' render={() => <Dog name='Biscuit' />} />
 					<Route exact path='/dog/lover' component={Lover} />
 					<Route exact path='/contact' component={Contact} />
 				</Switch>
