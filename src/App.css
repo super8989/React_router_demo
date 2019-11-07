@@ -4,12 +4,32 @@
 	background: beige;
 	height: 100vh;
 	justify-content: center;
-	flex-direction: row;
+	flex-direction: column;
 	align-items: center;
 }
 
+.App-nav {
+	display: flex;
+	width: 50%;
+	margin: 1rem auto;
+	justify-content: space-around;
+}
+
+a {
+	font-size: 2rem;
+	text-decoration: none;
+	color: black;
+	transition: all 0.4s ease-out;
+}
+
+.App-nav a:hover {
+	/* border-bottom: 1px solid rgba(248, 187, 208, 1); */
+	color: blue;
+	cursor: pointer;
+}
+
 img {
-	width: 30%;
+	width: 80%;
 }
 
 .Dog,
