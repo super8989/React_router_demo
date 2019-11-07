@@ -4,7 +4,7 @@ import Contact from "./Contact";
 import Dog from "./Dog";
 import "./App.css";
 
-class App extends Component {
+class FakeRouting extends Component {
 	constructor(props) {
 		super(props);
 		this.state = { page: "about" };
@@ -34,4 +34,4 @@ class App extends Component {
 	}
 }
 
-export default App;
+export default FakeRouting;
